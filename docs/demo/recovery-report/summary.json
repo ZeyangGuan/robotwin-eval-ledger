@@ -1,0 +1,62 @@
+{
+  "run_id": "synthetic-recovery",
+  "synthetic": true,
+  "files": 2,
+  "workers": 1,
+  "workers_without_end": 1,
+  "duplicate_events": 1,
+  "retry_seeds": 1,
+  "superseded_attempts": 1,
+  "worker_errors": 0,
+  "all_attempts": {
+    "attempts": 5,
+    "expert_accepted": 2,
+    "expert_rejected": 1,
+    "expert_skipped": 0,
+    "expert_unknown": 2,
+    "policy_started": 3,
+    "policy_completed": 2,
+    "policy_success": 2,
+    "policy_fail": 0,
+    "infra_error": 1,
+    "unfinished": 1,
+    "observed_policy_rate": 1.0
+  },
+  "latest_attempts": {
+    "attempts": 4,
+    "expert_accepted": 2,
+    "expert_rejected": 1,
+    "expert_skipped": 0,
+    "expert_unknown": 1,
+    "policy_started": 3,
+    "policy_completed": 2,
+    "policy_success": 2,
+    "policy_fail": 0,
+    "infra_error": 0,
+    "unfinished": 1,
+    "observed_policy_rate": 1.0
+  },
+  "official": [],
+  "variants": [
+    {
+      "task": "synthetic_pick",
+      "variant": null,
+      "attempts": 4,
+      "expert_accepted": 2,
+      "expert_rejected": 1,
+      "expert_skipped": 0,
+      "expert_unknown": 1,
+      "policy_started": 3,
+      "policy_completed": 2,
+      "policy_success": 2,
+      "policy_fail": 0,
+      "infra_error": 0,
+      "unfinished": 1,
+      "observed_policy_rate": 1.0
+    }
+  ],
+  "warnings": [
+    "worker-0.jsonl:16: ignored truncated final line; lost event contents are unknown",
+    "Worker 0: no worker_end observed; run coverage may be incomplete"
+  ]
+}

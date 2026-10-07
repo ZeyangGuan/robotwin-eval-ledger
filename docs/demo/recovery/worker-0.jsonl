@@ -1,0 +1,16 @@
+{"config_fingerprint":"sha256:9021d0cacdcbedb5197239d6acaf717e53d893d18052fa2ae3b72d039e87efd2","environment_fingerprint":null,"event_id":"d9b9d945-dfbb-46c6-b441-5be6a23eed73","kind":"worker_start","run_id":"synthetic-recovery","schema":1,"seq":1,"synthetic":true,"worker_id":"0"}
+{"attempt":0,"event_id":"825578dd-b3dc-4b97-9c98-874d88d53b30","kind":"attempt_start","run_id":"synthetic-recovery","schema":1,"seed":0,"seq":2,"task":"synthetic_pick","variant":null,"worker_id":"0"}
+{"attempt":0,"event_id":"23114e82-4694-4ef5-b365-3d3d51700ec1","kind":"infra_error","reason":"synthetic renderer timeout","run_id":"synthetic-recovery","schema":1,"seed":0,"seq":3,"stage":"setup","task":"synthetic_pick","worker_id":"0"}
+{"attempt":1,"event_id":"2c2cf20c-b763-4493-9db7-3f8f087269e3","kind":"attempt_start","run_id":"synthetic-recovery","schema":1,"seed":0,"seq":4,"task":"synthetic_pick","variant":null,"worker_id":"0"}
+{"attempt":1,"event_id":"b37884e2-7d8c-4e94-b4ae-ddb289a9bac0","kind":"expert_result","outcome":"accepted","run_id":"synthetic-recovery","schema":1,"seed":0,"seq":5,"task":"synthetic_pick","worker_id":"0"}
+{"attempt":1,"event_id":"5112cd8d-1937-47e2-a005-7217fbab1d3b","kind":"policy_start","run_id":"synthetic-recovery","schema":1,"seed":0,"seq":6,"task":"synthetic_pick","worker_id":"0"}
+{"attempt":1,"event_id":"1635a196-de6b-4edf-804f-1f50342d04ed","kind":"policy_result","outcome":"success","run_id":"synthetic-recovery","schema":1,"seed":0,"seq":7,"task":"synthetic_pick","worker_id":"0"}
+{"attempt":0,"event_id":"45a570c0-4083-4d47-9550-2f704a50478a","kind":"attempt_start","run_id":"synthetic-recovery","schema":1,"seed":2,"seq":8,"task":"synthetic_pick","variant":null,"worker_id":"0"}
+{"attempt":0,"event_id":"fef95f83-45fc-4300-9160-93a27e7a9877","kind":"expert_result","outcome":"rejected","run_id":"synthetic-recovery","schema":1,"seed":2,"seq":9,"task":"synthetic_pick","worker_id":"0"}
+{"attempt":0,"event_id":"318d5911-d546-42da-ae2c-0eed33698bf8","kind":"attempt_start","run_id":"synthetic-recovery","schema":1,"seed":3,"seq":10,"task":"synthetic_pick","variant":null,"worker_id":"0"}
+{"attempt":0,"event_id":"3355fcde-c1b7-48e7-9420-a1e76bcd777b","kind":"policy_start","run_id":"synthetic-recovery","schema":1,"seed":3,"seq":11,"task":"synthetic_pick","worker_id":"0"}
+{"attempt":0,"event_id":"16d46861-048e-4a45-a088-4b539ade8f1d","kind":"policy_result","outcome":"success","run_id":"synthetic-recovery","schema":1,"seed":3,"seq":12,"task":"synthetic_pick","worker_id":"0"}
+{"attempt":0,"event_id":"9a85dc86-dd63-4d3c-ba70-6c91b64d973f","kind":"attempt_start","run_id":"synthetic-recovery","schema":1,"seed":1,"seq":13,"task":"synthetic_pick","variant":null,"worker_id":"0"}
+{"attempt":0,"event_id":"6c298d90-7497-4a57-87f0-425e9a1d5c3d","kind":"expert_result","outcome":"accepted","run_id":"synthetic-recovery","schema":1,"seed":1,"seq":14,"task":"synthetic_pick","worker_id":"0"}
+{"attempt":0,"event_id":"779d8fe6-2c33-43ea-988d-e7c8a7434b67","kind":"policy_start","run_id":"synthetic-recovery","schema":1,"seed":1,"seq":15,"task":"synthetic_pick","worker_id":"0"}
+{"schema":1,"kind":"policy_result","outcome":"succ

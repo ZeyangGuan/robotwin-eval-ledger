@@ -1,0 +1,101 @@
+task,seed,left_attempt,right_attempt,left_outcome,right_outcome,pairing,reason
+synthetic_pick,0,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,1,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,2,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,3,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,4,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,5,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,6,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,7,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,8,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,9,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,10,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,11,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,12,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,13,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,14,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,15,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,16,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,17,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,18,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,19,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,20,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,21,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,22,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,23,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,24,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,25,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,26,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,27,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,28,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,29,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,30,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,31,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,32,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,33,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,34,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,35,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,36,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,37,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,38,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,39,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,40,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,41,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,42,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,43,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,44,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,45,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,46,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,47,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,48,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,49,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,50,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,51,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,52,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,53,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,54,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,55,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,56,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,57,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,58,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,59,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,60,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,61,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,62,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,63,0,0,policy_success,policy_success,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,64,0,0,policy_success,policy_fail,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,65,0,0,policy_success,policy_fail,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,66,0,0,policy_success,policy_fail,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,67,0,0,policy_success,policy_fail,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,68,0,0,policy_success,policy_fail,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,69,0,0,policy_success,policy_fail,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,70,0,0,policy_success,policy_fail,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,71,0,0,policy_success,policy_fail,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,72,0,0,policy_success,policy_fail,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,73,0,0,policy_success,policy_fail,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,74,0,0,policy_success,policy_fail,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,75,0,0,policy_success,policy_fail,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,76,0,0,policy_success,policy_fail,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,77,0,0,policy_success,policy_fail,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,78,0,0,policy_success,policy_fail,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,79,0,0,policy_success,policy_fail,metadata_matched,equal declared metadata; not a simulator determinism guarantee
+synthetic_pick,80,0,0,policy_fail,expert_rejected,not_policy_pair,one or both latest attempts have no completed policy outcome
+synthetic_pick,81,0,0,policy_fail,expert_rejected,not_policy_pair,one or both latest attempts have no completed policy outcome
+synthetic_pick,82,0,0,policy_fail,expert_rejected,not_policy_pair,one or both latest attempts have no completed policy outcome
+synthetic_pick,83,0,0,policy_fail,expert_rejected,not_policy_pair,one or both latest attempts have no completed policy outcome
+synthetic_pick,84,0,0,policy_fail,expert_rejected,not_policy_pair,one or both latest attempts have no completed policy outcome
+synthetic_pick,85,0,0,policy_fail,expert_rejected,not_policy_pair,one or both latest attempts have no completed policy outcome
+synthetic_pick,86,0,0,policy_fail,expert_rejected,not_policy_pair,one or both latest attempts have no completed policy outcome
+synthetic_pick,87,0,0,policy_fail,expert_rejected,not_policy_pair,one or both latest attempts have no completed policy outcome
+synthetic_pick,88,0,0,policy_fail,expert_rejected,not_policy_pair,one or both latest attempts have no completed policy outcome
+synthetic_pick,89,0,0,policy_fail,expert_rejected,not_policy_pair,one or both latest attempts have no completed policy outcome
+synthetic_pick,90,0,0,policy_fail,expert_rejected,not_policy_pair,one or both latest attempts have no completed policy outcome
+synthetic_pick,91,0,0,policy_fail,expert_rejected,not_policy_pair,one or both latest attempts have no completed policy outcome
+synthetic_pick,92,0,0,policy_fail,expert_rejected,not_policy_pair,one or both latest attempts have no completed policy outcome
+synthetic_pick,93,0,0,policy_fail,expert_rejected,not_policy_pair,one or both latest attempts have no completed policy outcome
+synthetic_pick,94,0,0,policy_fail,expert_rejected,not_policy_pair,one or both latest attempts have no completed policy outcome
+synthetic_pick,95,0,0,policy_fail,expert_rejected,not_policy_pair,one or both latest attempts have no completed policy outcome
+synthetic_pick,96,0,0,policy_fail,expert_rejected,not_policy_pair,one or both latest attempts have no completed policy outcome
+synthetic_pick,97,0,0,policy_fail,expert_rejected,not_policy_pair,one or both latest attempts have no completed policy outcome
+synthetic_pick,98,0,0,policy_fail,expert_rejected,not_policy_pair,one or both latest attempts have no completed policy outcome
+synthetic_pick,99,0,0,policy_fail,expert_rejected,not_policy_pair,one or both latest attempts have no completed policy outcome

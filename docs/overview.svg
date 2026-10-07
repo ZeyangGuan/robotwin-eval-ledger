@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="480" viewBox="0 0 1120 480" role="img" aria-labelledby="title desc">
+<title id="title">Same score. Which samples?</title><desc id="desc">Synthetic illustration: Run A evaluates 100 seeds and succeeds on 80. Run B rejects 20 at the expert gate, evaluates 80, and succeeds on 64. Both observed policy rates are 80 percent, but the sets differ.</desc>
+<rect width="1120" height="480" rx="18" fill="#f4f4ed"/>
+<path d="M36 38H1084" stroke="#16765b" stroke-width="4"/>
+<g font-family="system-ui, sans-serif" fill="#172828">
+<text x="40" y="75" font-size="12" font-weight="700" letter-spacing="2" fill="#16765b">ROBOTWIN EVAL LEDGER / SYNTHETIC ILLUSTRATION</text>
+<text x="40" y="126" font-size="42" font-weight="700">Same score. Which samples?</text>
+<text x="40" y="159" font-size="17" fill="#61716f">Make the denominator and filtered variants visible. No simulator required.</text>
+<rect x="40" y="188" width="510" height="198" rx="10" fill="#fffef9" stroke="#d6ddd5"/>
+<rect x="570" y="188" width="510" height="198" rx="10" fill="#fffef9" stroke="#d6ddd5"/>
+<text x="64" y="222" font-size="13" font-weight="700" fill="#16765b">RUN A</text>
+<text x="594" y="222" font-size="13" font-weight="700" fill="#16765b">RUN B</text>
+<text x="64" y="278" font-size="48" font-weight="700">80%</text>
+<text x="594" y="278" font-size="48" font-weight="700">80%</text>
+<text x="64" y="310" font-size="16">80 / 100 completed policy episodes</text>
+<text x="594" y="310" font-size="16">64 / 80 completed policy episodes</text>
+<rect x="64" y="328" width="368" height="14" fill="#16765b"/><rect x="432" y="328" width="92" height="14" fill="#99c3b0"/>
+<rect x="594" y="328" width="294.4" height="14" fill="#16765b"/><rect x="888.4" y="328" width="73.6" height="14" fill="#99c3b0"/><rect x="962" y="328" width="92" height="14" fill="#aa702c"/>
+<text x="64" y="367" font-size="14" fill="#61716f">100 sampled · 0 expert rejected</text>
+<text x="594" y="367" font-size="14" fill="#61716f">100 sampled · 20 expert rejected</text>
+<text x="40" y="429" font-size="18" font-weight="700">Same observed policy set? No.</text>
+<text x="40" y="457" font-size="13" fill="#61716f">Fabricated data only. Not benchmark results. Open the included HTML reports to inspect each seed.</text>
+</g></svg>

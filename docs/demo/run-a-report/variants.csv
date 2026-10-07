@@ -1,0 +1,6 @@
+task,variant,attempts,expert_accepted,expert_rejected,expert_skipped,expert_unknown,policy_started,policy_completed,policy_success,policy_fail,infra_error,unfinished,observed_policy_rate
+synthetic_pick,"{""synthetic_object_variant"":0}",20,20,0,0,0,20,20,20,0,0,0,1.0
+synthetic_pick,"{""synthetic_object_variant"":1}",20,20,0,0,0,20,20,20,0,0,0,1.0
+synthetic_pick,"{""synthetic_object_variant"":2}",20,20,0,0,0,20,20,20,0,0,0,1.0
+synthetic_pick,"{""synthetic_object_variant"":3}",20,20,0,0,0,20,20,20,0,0,0,1.0
+synthetic_pick,"{""synthetic_object_variant"":4}",20,20,0,0,0,20,20,0,20,0,0,0.0

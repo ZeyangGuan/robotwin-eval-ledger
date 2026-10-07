@@ -1,0 +1,1021 @@
+{
+  "left_run": "run-a",
+  "right_run": "run-b",
+  "synthetic": true,
+  "shared_attempted_seeds": 100,
+  "left_only_attempted": 0,
+  "right_only_attempted": 0,
+  "shared_policy_seeds": 80,
+  "left_policy_seeds": 100,
+  "right_policy_seeds": 80,
+  "policy_seed_sets_equal": false,
+  "metadata_matched_pairs": 80,
+  "pairing_unknown": 0,
+  "pairing_mismatch": 0,
+  "same_observed_policy_set": "no",
+  "paired_left_success": 80,
+  "paired_right_success": 64,
+  "warnings": [],
+  "rows": [
+    {
+      "task": "synthetic_pick",
+      "seed": 0,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 1,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 2,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 3,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 4,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 5,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 6,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 7,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 8,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 9,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 10,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 11,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 12,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 13,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 14,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 15,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 16,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 17,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 18,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 19,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 20,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 21,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 22,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 23,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 24,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 25,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 26,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 27,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 28,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 29,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 30,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 31,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 32,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 33,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 34,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 35,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 36,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 37,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 38,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 39,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 40,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 41,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 42,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 43,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 44,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 45,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 46,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 47,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 48,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 49,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 50,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 51,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 52,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 53,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 54,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 55,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 56,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 57,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 58,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 59,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 60,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 61,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 62,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 63,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_success",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 64,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_fail",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 65,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_fail",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 66,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_fail",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 67,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_fail",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 68,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_fail",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 69,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_fail",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 70,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_fail",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 71,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_fail",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 72,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_fail",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 73,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_fail",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 74,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_fail",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 75,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_fail",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 76,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_fail",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 77,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_fail",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 78,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_fail",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 79,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_success",
+      "right_outcome": "policy_fail",
+      "pairing": "metadata_matched",
+      "reason": "equal declared metadata; not a simulator determinism guarantee"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 80,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_fail",
+      "right_outcome": "expert_rejected",
+      "pairing": "not_policy_pair",
+      "reason": "one or both latest attempts have no completed policy outcome"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 81,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_fail",
+      "right_outcome": "expert_rejected",
+      "pairing": "not_policy_pair",
+      "reason": "one or both latest attempts have no completed policy outcome"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 82,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_fail",
+      "right_outcome": "expert_rejected",
+      "pairing": "not_policy_pair",
+      "reason": "one or both latest attempts have no completed policy outcome"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 83,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_fail",
+      "right_outcome": "expert_rejected",
+      "pairing": "not_policy_pair",
+      "reason": "one or both latest attempts have no completed policy outcome"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 84,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_fail",
+      "right_outcome": "expert_rejected",
+      "pairing": "not_policy_pair",
+      "reason": "one or both latest attempts have no completed policy outcome"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 85,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_fail",
+      "right_outcome": "expert_rejected",
+      "pairing": "not_policy_pair",
+      "reason": "one or both latest attempts have no completed policy outcome"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 86,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_fail",
+      "right_outcome": "expert_rejected",
+      "pairing": "not_policy_pair",
+      "reason": "one or both latest attempts have no completed policy outcome"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 87,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_fail",
+      "right_outcome": "expert_rejected",
+      "pairing": "not_policy_pair",
+      "reason": "one or both latest attempts have no completed policy outcome"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 88,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_fail",
+      "right_outcome": "expert_rejected",
+      "pairing": "not_policy_pair",
+      "reason": "one or both latest attempts have no completed policy outcome"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 89,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_fail",
+      "right_outcome": "expert_rejected",
+      "pairing": "not_policy_pair",
+      "reason": "one or both latest attempts have no completed policy outcome"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 90,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_fail",
+      "right_outcome": "expert_rejected",
+      "pairing": "not_policy_pair",
+      "reason": "one or both latest attempts have no completed policy outcome"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 91,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_fail",
+      "right_outcome": "expert_rejected",
+      "pairing": "not_policy_pair",
+      "reason": "one or both latest attempts have no completed policy outcome"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 92,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_fail",
+      "right_outcome": "expert_rejected",
+      "pairing": "not_policy_pair",
+      "reason": "one or both latest attempts have no completed policy outcome"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 93,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_fail",
+      "right_outcome": "expert_rejected",
+      "pairing": "not_policy_pair",
+      "reason": "one or both latest attempts have no completed policy outcome"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 94,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_fail",
+      "right_outcome": "expert_rejected",
+      "pairing": "not_policy_pair",
+      "reason": "one or both latest attempts have no completed policy outcome"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 95,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_fail",
+      "right_outcome": "expert_rejected",
+      "pairing": "not_policy_pair",
+      "reason": "one or both latest attempts have no completed policy outcome"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 96,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_fail",
+      "right_outcome": "expert_rejected",
+      "pairing": "not_policy_pair",
+      "reason": "one or both latest attempts have no completed policy outcome"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 97,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_fail",
+      "right_outcome": "expert_rejected",
+      "pairing": "not_policy_pair",
+      "reason": "one or both latest attempts have no completed policy outcome"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 98,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_fail",
+      "right_outcome": "expert_rejected",
+      "pairing": "not_policy_pair",
+      "reason": "one or both latest attempts have no completed policy outcome"
+    },
+    {
+      "task": "synthetic_pick",
+      "seed": 99,
+      "left_attempt": 0,
+      "right_attempt": 0,
+      "left_outcome": "policy_fail",
+      "right_outcome": "expert_rejected",
+      "pairing": "not_policy_pair",
+      "reason": "one or both latest attempts have no completed policy outcome"
+    }
+  ]
+}

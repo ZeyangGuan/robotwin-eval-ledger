@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "robotwin-eval-ledger"
+version = "0.1.0"
+description = "An explicit event ledger for evaluation denominators, retries, and sample-set comparisons"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = []
+classifiers = ["Programming Language :: Python :: 3", "Operating System :: OS Independent"]
+
+[project.scripts]
+robotwin-ledger = "robotwin_eval_ledger.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["robotwin_eval_ledger*"]

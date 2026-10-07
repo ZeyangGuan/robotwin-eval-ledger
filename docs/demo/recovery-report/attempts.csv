@@ -1,0 +1,6 @@
+task,seed,attempt,worker_id,config_fingerprint,environment_fingerprint,variant,scene_fingerprint,instruction_fingerprint,expert,policy_started,outcome,error_stage,error_reason,selected_latest
+synthetic_pick,0,0,0,sha256:9021d0cacdcbedb5197239d6acaf717e53d893d18052fa2ae3b72d039e87efd2,unknown,unknown,unknown,unknown,unknown,False,infra_error,setup,synthetic renderer timeout,False
+synthetic_pick,0,1,0,sha256:9021d0cacdcbedb5197239d6acaf717e53d893d18052fa2ae3b72d039e87efd2,unknown,unknown,unknown,unknown,accepted,True,policy_success,unknown,unknown,True
+synthetic_pick,1,0,0,sha256:9021d0cacdcbedb5197239d6acaf717e53d893d18052fa2ae3b72d039e87efd2,unknown,unknown,unknown,unknown,accepted,True,unfinished,unknown,unknown,True
+synthetic_pick,2,0,0,sha256:9021d0cacdcbedb5197239d6acaf717e53d893d18052fa2ae3b72d039e87efd2,unknown,unknown,unknown,unknown,rejected,False,expert_rejected,unknown,unknown,True
+synthetic_pick,3,0,0,sha256:9021d0cacdcbedb5197239d6acaf717e53d893d18052fa2ae3b72d039e87efd2,unknown,unknown,unknown,unknown,unknown,True,policy_success,unknown,unknown,True

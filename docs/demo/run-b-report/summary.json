@@ -1,0 +1,140 @@
+{
+  "run_id": "run-b",
+  "synthetic": true,
+  "files": 2,
+  "workers": 2,
+  "workers_without_end": 0,
+  "duplicate_events": 0,
+  "retry_seeds": 0,
+  "superseded_attempts": 0,
+  "worker_errors": 0,
+  "all_attempts": {
+    "attempts": 100,
+    "expert_accepted": 80,
+    "expert_rejected": 20,
+    "expert_skipped": 0,
+    "expert_unknown": 0,
+    "policy_started": 80,
+    "policy_completed": 80,
+    "policy_success": 64,
+    "policy_fail": 16,
+    "infra_error": 0,
+    "unfinished": 0,
+    "observed_policy_rate": 0.8
+  },
+  "latest_attempts": {
+    "attempts": 100,
+    "expert_accepted": 80,
+    "expert_rejected": 20,
+    "expert_skipped": 0,
+    "expert_unknown": 0,
+    "policy_started": 80,
+    "policy_completed": 80,
+    "policy_success": 64,
+    "policy_fail": 16,
+    "infra_error": 0,
+    "unfinished": 0,
+    "observed_policy_rate": 0.8
+  },
+  "official": [
+    {
+      "task": "synthetic_pick",
+      "successes": 64,
+      "denominator": 80,
+      "label": "Synthetic upstream-style completed-policy denominator; not a benchmark result"
+    }
+  ],
+  "variants": [
+    {
+      "task": "synthetic_pick",
+      "variant": {
+        "synthetic_object_variant": 0
+      },
+      "attempts": 20,
+      "expert_accepted": 20,
+      "expert_rejected": 0,
+      "expert_skipped": 0,
+      "expert_unknown": 0,
+      "policy_started": 20,
+      "policy_completed": 20,
+      "policy_success": 20,
+      "policy_fail": 0,
+      "infra_error": 0,
+      "unfinished": 0,
+      "observed_policy_rate": 1.0
+    },
+    {
+      "task": "synthetic_pick",
+      "variant": {
+        "synthetic_object_variant": 1
+      },
+      "attempts": 20,
+      "expert_accepted": 20,
+      "expert_rejected": 0,
+      "expert_skipped": 0,
+      "expert_unknown": 0,
+      "policy_started": 20,
+      "policy_completed": 20,
+      "policy_success": 20,
+      "policy_fail": 0,
+      "infra_error": 0,
+      "unfinished": 0,
+      "observed_policy_rate": 1.0
+    },
+    {
+      "task": "synthetic_pick",
+      "variant": {
+        "synthetic_object_variant": 2
+      },
+      "attempts": 20,
+      "expert_accepted": 20,
+      "expert_rejected": 0,
+      "expert_skipped": 0,
+      "expert_unknown": 0,
+      "policy_started": 20,
+      "policy_completed": 20,
+      "policy_success": 20,
+      "policy_fail": 0,
+      "infra_error": 0,
+      "unfinished": 0,
+      "observed_policy_rate": 1.0
+    },
+    {
+      "task": "synthetic_pick",
+      "variant": {
+        "synthetic_object_variant": 3
+      },
+      "attempts": 20,
+      "expert_accepted": 20,
+      "expert_rejected": 0,
+      "expert_skipped": 0,
+      "expert_unknown": 0,
+      "policy_started": 20,
+      "policy_completed": 20,
+      "policy_success": 4,
+      "policy_fail": 16,
+      "infra_error": 0,
+      "unfinished": 0,
+      "observed_policy_rate": 0.2
+    },
+    {
+      "task": "synthetic_pick",
+      "variant": {
+        "synthetic_object_variant": 4
+      },
+      "attempts": 20,
+      "expert_accepted": 0,
+      "expert_rejected": 20,
+      "expert_skipped": 0,
+      "expert_unknown": 0,
+      "policy_started": 0,
+      "policy_completed": 0,
+      "policy_success": 0,
+      "policy_fail": 0,
+      "infra_error": 0,
+      "unfinished": 0,
+      "observed_policy_rate": null
+    }
+  ],
+  "warnings": []
+}

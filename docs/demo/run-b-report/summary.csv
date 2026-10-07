@@ -1,0 +1,3 @@
+scope,attempts,expert_accepted,expert_rejected,expert_skipped,expert_unknown,policy_started,policy_completed,policy_success,policy_fail,infra_error,unfinished,observed_policy_rate
+all_attempts,100,80,20,0,0,80,80,64,16,0,0,0.8
+latest_attempts,100,80,20,0,0,80,80,64,16,0,0,0.8
