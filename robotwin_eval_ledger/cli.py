@@ -18,7 +18,7 @@ def main(argv=None):
     comp.add_argument("left")
     comp.add_argument("right")
     comp.add_argument("--out", required=True)
-    demo = sub.add_parser("demo", help="generate synthetic 100-seed and crash/retry examples")
+    demo = sub.add_parser("demo", help="generate synthetic 100-seed, crash/retry and multi-task examples")
     demo.add_argument("--out", default="demo-output", help="new or empty output directory")
     args = parser.parse_args(argv)
     try:
@@ -26,6 +26,7 @@ def main(argv=None):
             out = make_demo(args.out)
             print(f"Synthetic demo created: {out}/comparison/report.html")
             print("Both observed rates are 80%; evaluated sets differ (100 versus 80 seeds).")
+            print(f"Per-task diagnostics: {out}/multitask-report/report.html")
         elif args.command == "summarize":
             result = write_summary(load_run(args.inputs), args.out)
             print(json.dumps({"run_id": result["run_id"], "latest_attempts": result["latest_attempts"],

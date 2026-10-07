@@ -72,6 +72,21 @@ def rate(counts):
     return "unknown" if value is None else f"{value:.1%}"
 
 
+def task_rows(result):
+    """Two rows per task, including tasks with no observed policy completions."""
+    return [dict(task=task["task"], scope=scope, **task[scope],
+                 retry_seeds=task["retry_seeds"], superseded_attempts=task["superseded_attempts"])
+            for task in result["tasks"] for scope in ("all_attempts", "latest_attempts")]
+
+
+def task_table(result, scope):
+    rows = [dict(task=task["task"], **task[scope], rate=rate(task[scope]),
+                 retry_seeds=task["retry_seeds"]) for task in result["tasks"]]
+    return table(rows, [("task", "Task"), ("attempts", "Attempts"), ("policy_completed", "Policy completed / denominator"),
+                        ("policy_success", "Success"), ("policy_fail", "Fail"), ("rate", "Observed rate"), ("expert_rejected", "Rejected"),
+                        ("infra_error", "Infra"), ("unfinished", "Unfinished"), ("retry_seeds", "Retried seeds")])
+
+
 def bar(counts):
     items = [("policy_success", "success", "Policy success"), ("policy_fail", "fail", "Policy fail"),
              ("expert_rejected", "rejected", "Expert rejected"), ("infra_error", "infra", "Infrastructure"),
@@ -100,14 +115,19 @@ Only observed events are represented. Missing events, unknown metadata and infra
 def summary_html(run, result):
     counts = result["latest_attempts"]
     completed = counts["policy_completed"]
-    body = '<div class="cards">' + card("Observed policy rate", rate(counts), f'{counts["policy_success"]}/{completed} completed latest attempts')
+    body = '<div class="cards">' + card("Global observed policy rate", rate(counts), f'{counts["policy_success"]}/{completed} completed latest attempts')
     body += card("Expert rejected", counts["expert_rejected"], "Excluded from observed policy denominator")
     body += card("Unresolved latest", counts["infra_error"] + counts["unfinished"], "Infrastructure + unfinished; not policy fail")
     body += card("Retries", result["retry_seeds"], f'{result["superseded_attempts"]} superseded attempts retained') + '</div>'
     body += '<div class="note">Selection rule: highest declared attempt number per (task, seed). A newer unfinished retry supersedes an older success in this view. See all attempts below.</div>'
+    body += '<p class="muted">The global observed rate pools completed policy episodes (episode-weighted), not task percentages. It is not a task-macro benchmark score.</p>'
     body += '<section><h2>What happened to the sampled seeds?</h2>' + bar(counts)
     fields = [("scope", "Scope"), ("attempts", "Attempts"), ("expert_accepted", "Gate accepted"), ("expert_rejected", "Rejected"), ("expert_skipped", "Gate skipped"), ("expert_unknown", "Gate unknown"), ("policy_success", "Success"), ("policy_fail", "Fail"), ("infra_error", "Infra"), ("unfinished", "Unfinished")]
     body += table([dict(scope="Latest per seed", **counts), dict(scope="All attempts", **result["all_attempts"])], fields) + '</section>'
+    body += '<section><h2>Per-task diagnostics</h2><p class="muted">Latest declared attempt per (task, seed). Observed rate = success / policy completed; zero completions stays unknown. All recorded tasks remain visible, including tasks with only an official summary.</p>'
+    body += task_table(result, "latest_attempts")
+    body += '<details><summary>Per-task all-attempt counts</summary><p class="muted">Includes superseded retries. The denominator counts completed attempts, not unique seeds.</p>'
+    body += task_table(result, "all_attempts") + '</details></section>'
     body += '<section><h2>Official result, preserved separately</h2>'
     body += table(result["official"], [("task", "Task"), ("successes", "Numerator"), ("denominator", "Denominator"), ("label", "Recorded meaning")]) if result["official"] else '<p>unknown: no explicit upstream summary was recorded</p>'
     body += '<p class="muted">The ledger does not reconstruct, replace or “correct” the official denominator.</p></section>'
@@ -128,7 +148,7 @@ def comparison_html(left, right, result):
     body += '<div class="grid2">'
     for run, s in [(left, ls), (right, rs)]:
         c = s["latest_attempts"]
-        body += f'<section><div class="eyebrow">{esc(run.run_id)}</div><h1>{rate(c)}</h1><p>{c["policy_success"]}/{c["policy_completed"]} observed completed policy attempts</p>' + bar(c)
+        body += f'<section><div class="eyebrow">{esc(run.run_id)}</div><h1>{rate(c)}</h1><p>{c["policy_success"]}/{c["policy_completed"]} observed completed policy attempts</p><p class="muted">Global episode-weighted rate, not a task-macro benchmark score.</p>' + bar(c)
         body += f'<p class="muted">{c["attempts"]} sampled · {c["expert_rejected"]} expert rejected</p></section>'
     body += '</div><div class="cards">' + card("Shared attempted seeds", result["shared_attempted_seeds"], "Intersection of task/seed keys")
     body += card("Shared policy seeds", result["shared_policy_seeds"], "Completed in both latest attempts")
@@ -150,6 +170,7 @@ def write_summary(run: Run, out):
     (out / "summary.json").write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     summary_rows = [dict(scope=k, **result[k]) for k in ("all_attempts", "latest_attempts")]
     write_csv(out / "summary.csv", summary_rows, list(summary_rows[0]))
+    write_csv(out / "tasks.csv", task_rows(result), ["task", *summary_rows[0], "retry_seeds", "superseded_attempts"])
     latest = run.latest()
     rows = [dict(a.row(), selected_latest=latest[a.key] is a) for a in run.attempts]
     write_csv(out / "attempts.csv", rows, list(rows[0]) if rows else ["task", "seed", "attempt", "outcome", "selected_latest"])

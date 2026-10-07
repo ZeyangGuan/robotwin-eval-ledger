@@ -10,18 +10,29 @@ Independent, unofficial tooling. No RoboTwin, PyTorch, simulator, GPU, cloud ser
 
 ## Try it in a minute
 
-From this checkout, no installation is necessary:
+Clone the public repository, install locally, and generate the fabricated examples (Python 3.10+):
 
 ```sh
-python -m robotwin_eval_ledger demo --out demo-output
-python -m robotwin_eval_ledger summarize demo-output/run-b --out summary
-python -m robotwin_eval_ledger compare demo-output/run-a demo-output/run-b --out comparison
-python -m unittest discover -s tests -v
+git clone https://github.com/ZeyangGuan/robotwin-eval-ledger.git
+cd robotwin-eval-ledger
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install .
+robotwin-ledger demo --out demo-output
 ```
 
-Open `demo-output/comparison/report.html` in a browser. The file works offline. A ready-made [HTML comparison](docs/demo/comparison/report.html), [run B report](docs/demo/run-b-report/report.html), and [crash/retry report](docs/demo/recovery-report/report.html) are included. GitHub may show their source; download the ZIP or raw file and open locally.
+On Windows PowerShell, use `.venv\Scripts\Activate.ps1` for the activation step. To skip installation, after cloning and entering the checkout run `python -m robotwin_eval_ledger demo --out demo-output` instead. The package has zero runtime dependencies; installation needs setuptools as the build backend. These instructions install from the checkout, not PyPI.
 
-Optional installation: `python -m pip install .`, then use `robotwin-ledger` instead of `python -m robotwin_eval_ledger`. The package has zero runtime dependencies; installation needs setuptools as the build backend.
+Open `demo-output/comparison/report.html` in a browser: both rates are 80%, but only 80 completed seeds are shared. Open `demo-output/multitask-report/report.html` to see each task's denominator, including tasks with no completed policy episodes. Both files work offline.
+
+A ready-made [multi-task report](docs/demo/multitask-report/report.html) and original [HTML comparison](docs/demo/comparison/report.html), [run B report](docs/demo/run-b-report/report.html), and [crash/retry report](docs/demo/recovery-report/report.html) are included. GitHub may show their source; download the ZIP or raw file and open locally. The original reports are snapshots; regenerate the demo for the current layout.
+
+To summarize or compare your own logs, replace the demo input paths:
+
+```sh
+robotwin-ledger summarize demo-output/run-b --out summary
+robotwin-ledger compare demo-output/run-a demo-output/run-b --out comparison
+```
 
 ### What the synthetic demo proves
 
@@ -33,6 +44,8 @@ Optional installation: `python -m pip install .`, then use `robotwin-ledger` ins
 Both report 80%, but the observed policy sets differ. B's rejected variant remains visible. The shared, metadata-matched subset has 80 episodes: A is 80/80 and B is 64/80 **on that selected intersection only**. This is not an overall ranking or benchmark result.
 
 The recovery demo includes a setup error followed by a successful retry, an unfinished policy with a truncated last event, one exact duplicate event, and unknown pairing metadata. No simulation was run to create these examples.
+
+The small multi-task demo has one task at 2/2, another at 0/2, a fully expert-rejected task, an infrastructure-only task, and an unfinished task. Its global observed rate is 2/4 = 50%, pooled over completed episodes. The last three tasks have **unknown** observed rates, not 0%, and remain in the per-task table. An explicit synthetic upstream 0/0 stays separate from observed counts.
 
 ## Record events in an evaluator
 
@@ -66,7 +79,8 @@ See [the executable logging example](examples/record_one_episode.py) and [versio
 ## Accounting rules
 
 - **Official result:** Only an explicit `official_summary` is shown. Missing official numerator or denominator stays unknown. A coordinator can record it in its own worker file. Once per task/run; conflicting or repeated summaries fail validation.
-- **Observed policy rate:** `policy_success / (policy_success + policy_fail)`. Rejected experts, infrastructure errors, and unfinished attempts are excluded and counted visibly. This observed rate is conditional on completed policy outcomes and is not substituted for the official result.
+- **Observed policy rate:** `policy_success / (policy_success + policy_fail)`. Rejected experts, infrastructure errors, and unfinished attempts are excluded and counted visibly. The global rate pools completed episodes across tasks (episode-weighted); it is not a task-macro benchmark score. This observed rate is conditional on completed policy outcomes and is not substituted for the official result.
+- **Per-task diagnostics:** Each recorded task gets the same all-attempt and latest-attempt counts as the global summary, plus retried-seed and superseded-attempt counts. Tasks with zero policy completions, including tasks seen only in an explicit official summary, stay visible. Their observed rate is `null` in JSON and `unknown` in HTML/CSV. No unlogged task or scheduled denominator is inferred.
 - **Retries:** Both all-attempt and latest-attempt counts are exported. The latest view takes the largest declared attempt number per `(task, seed)`, even if that attempt is unfinished. It never selects the most successful attempt. A late-arriving result does not change the ordering rule.
 - **Unknown:** No expert event means unknown, not accepted. No variant means unknown. A started policy without a terminal event is unfinished, not failed. A worker without `worker_end` is flagged. `worker_end` is a lifecycle marker, not proof that all scheduled work finished.
 - **Duplicates:** Identical event IDs and canonical payloads are deduplicated and counted. Reusing an ID with different data, a sequence number collision/gap, or two workers claiming one `(task, seed, attempt)` is an error. Events with different IDs are not silently deduplicated.
@@ -77,7 +91,9 @@ Comparisons use the latest-attempt view and completed policy outcomes only. A se
 
 ## Outputs and event format
 
-`summarize` writes `report.html`, `summary.json`, `summary.csv`, `attempts.csv`, `variants.csv`, and `official.csv`. `compare` writes `report.html`, `comparison.json`, and `comparison.csv`. Reports overwrite those named files in `--out`; raw input JSONL is never modified. Inputs can be one or more files or directories; directory scans are nonrecursive. A summary accepts exactly one `run_id`.
+`summarize` writes `report.html`, `summary.json`, `summary.csv`, `tasks.csv`, `attempts.csv`, `variants.csv`, and `official.csv`. `compare` writes `report.html`, `comparison.json`, and `comparison.csv`. Reports overwrite those named files in `--out`; raw input JSONL is never modified. Inputs can be one or more files or directories; directory scans are nonrecursive. A summary accepts exactly one `run_id`.
+
+`summary.json.tasks` is a task-name-sorted list. Each entry has `task`, `all_attempts`, `latest_attempts`, `retry_seeds`, `superseded_attempts`, and `official` (the explicit upstream record, or `null`). `tasks.csv` has two rows per task, with `scope` equal to `all_attempts` or `latest_attempts`; numeric rates are fractions. Its retry totals apply to the task across the run and repeat in both rows. Official results retain their separate meaning in `official.csv` and are never used to fill observed denominators.
 
 Schema v1 events have `schema`, `event_id`, `run_id`, `worker_id`, `seq`, and `kind`. Attempt events additionally have `task`, integer `seed`, and nonnegative integer `attempt`. Each worker begins with `worker_start` (`config_fingerprint`, nullable `environment_fingerprint`, `synthetic`), uses contiguous sequence numbers starting at 1, and normally ends with `worker_end`.
 
@@ -101,4 +117,10 @@ Original implementation, MIT licensed. No upstream code, assets, private project
 
 ## Validation
 
-The release candidate passes 47 standard-library unit tests on Python 3.12, including CLI output, CSV formula safety, HTML escaping and all accounting cases above. A built wheel was installed into a fresh virtual environment and its CLI exercised outside the checkout. Included HTML files were parsed and checked for external asset/script tags. Browser-rendered visual QA and simulator integration remain unverified. The included GitHub Actions matrix targets Python 3.10, 3.12 and 3.13 when the repository is published.
+Run the standard-library suite from the checkout:
+
+```sh
+python -m unittest discover -s tests -v
+```
+
+Local validation passes 55 tests on Python 3.12, including CLI output, per-task denominators, zero-completion tasks, retry views, CSV formula safety, and HTML escaping. A built wheel was installed into a fresh virtual environment and its CLI exercised outside the checkout. Included HTML files were parsed and checked for external asset/script tags. Browser-rendered visual QA and simulator integration remain unverified. The GitHub Actions matrix targets Python 3.10, 3.12 and 3.13.

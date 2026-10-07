@@ -370,15 +370,30 @@ def _counts(attempts):
 def summarize(run: Run):
     latest = list(run.latest().values())
     variants = defaultdict(list)
+    all_by_task, latest_by_task = defaultdict(list), defaultdict(list)
+    for a in run.attempts:
+        all_by_task[a.task].append(a)
     for a in latest:
         variants[(a.task, canonical(a.variant))].append(a)
+        latest_by_task[a.task].append(a)
     seeds = Counter(a.key for a in run.attempts)
+    retry_seeds = Counter(task for (task, seed), n in seeds.items() if n > 1)
+    official = [{k: e[k] for k in ("task", "successes", "denominator", "label")} for e in run.official]
+    official_by_task = {e["task"]: e for e in official}
+    # Include official-only tasks; no observed attempts is evidence of neither
+    # policy failure nor the upstream evaluation's coverage.
+    tasks = [dict(task=task, all_attempts=_counts(all_by_task[task]),
+                  latest_attempts=_counts(latest_by_task[task]),
+                  retry_seeds=retry_seeds[task],
+                  superseded_attempts=len(all_by_task[task]) - len(latest_by_task[task]),
+                  official=official_by_task.get(task))
+             for task in sorted(all_by_task.keys() | official_by_task.keys())]
     return dict(run_id=run.run_id, synthetic=all(w["synthetic"] for w in run.workers.values()),
                 files=run.files, workers=len(run.workers), workers_without_end=sum(not w["ended"] for w in run.workers.values()),
                 duplicate_events=run.duplicate_events, retry_seeds=sum(n > 1 for n in seeds.values()),
                 superseded_attempts=len(run.attempts) - len(latest), worker_errors=len(run.worker_errors),
                 all_attempts=_counts(run.attempts), latest_attempts=_counts(latest),
-                official=[{k: e[k] for k in ("task", "successes", "denominator", "label")} for e in run.official],
+                official=official, tasks=tasks,
                 variants=[dict(task=task, variant=json.loads(variant), **_counts(ats))
                           for (task, variant), ats in sorted(variants.items())], warnings=run.warnings)
 

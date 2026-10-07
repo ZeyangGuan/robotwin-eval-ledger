@@ -1,0 +1,11 @@
+task,scope,attempts,expert_accepted,expert_rejected,expert_skipped,expert_unknown,policy_started,policy_completed,policy_success,policy_fail,infra_error,unfinished,observed_policy_rate,retry_seeds,superseded_attempts
+synthetic_fail,all_attempts,2,2,0,0,0,2,2,0,2,0,0,0.0,0,0
+synthetic_fail,latest_attempts,2,2,0,0,0,2,2,0,2,0,0,0.0,0,0
+synthetic_infra,all_attempts,1,0,0,0,1,0,0,0,0,1,0,unknown,0,0
+synthetic_infra,latest_attempts,1,0,0,0,1,0,0,0,0,1,0,unknown,0,0
+synthetic_rejected,all_attempts,2,0,2,0,0,0,0,0,0,0,0,unknown,0,0
+synthetic_rejected,latest_attempts,2,0,2,0,0,0,0,0,0,0,0,unknown,0,0
+synthetic_success,all_attempts,2,2,0,0,0,2,2,2,0,0,0,1.0,0,0
+synthetic_success,latest_attempts,2,2,0,0,0,2,2,2,0,0,0,1.0,0,0
+synthetic_unfinished,all_attempts,1,0,0,0,1,1,0,0,0,0,1,unknown,0,0
+synthetic_unfinished,latest_attempts,1,0,0,0,1,1,0,0,0,0,1,unknown,0,0

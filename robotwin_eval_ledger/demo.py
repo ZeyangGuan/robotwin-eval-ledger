@@ -51,5 +51,26 @@ def make_demo(out):
     first_line = w.path.read_bytes().splitlines(keepends=True)[0]
     (out / "recovery" / "duplicate-copy.jsonl").write_bytes(first_line)
     write_summary(load_run(out / "recovery"), out / "recovery-report")
+    make_multitask_demo(out)
     write_comparison(load_run(out / "run-a"), load_run(out / "run-b"), out / "comparison")
     return out
+
+
+def make_multitask_demo(out):
+    """Small fabricated task mix; zero-completion tasks must remain visible."""
+    out = Path(out)
+    with Ledger(out / "multitask" / "worker-0.jsonl", run_id="synthetic-multitask", worker_id="0",
+                config={"policy": "synthetic"}, synthetic=True) as w:
+        for task, success in [("synthetic_success", True), ("synthetic_fail", False)]:
+            for seed in range(2):
+                a = w.start(task, seed)
+                a.expert("accepted")
+                a.policy_start()
+                a.policy(success)
+        w.official("synthetic_success", 2, 2, label="Fabricated upstream completed-policy denominator")
+        for seed in range(2):
+            w.start("synthetic_rejected", seed).expert("rejected")
+        w.official("synthetic_rejected", 0, 0, label="Fabricated upstream completed-policy denominator")
+        w.start("synthetic_infra", 0).infra("setup", "Fabricated setup interruption")
+        w.start("synthetic_unfinished", 0).policy_start()
+    return write_summary(load_run(out / "multitask"), out / "multitask-report")

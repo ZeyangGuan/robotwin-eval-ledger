@@ -1,0 +1,6 @@
+task,variant,attempts,expert_accepted,expert_rejected,expert_skipped,expert_unknown,policy_started,policy_completed,policy_success,policy_fail,infra_error,unfinished,observed_policy_rate
+synthetic_fail,unknown,2,2,0,0,0,2,2,0,2,0,0,0.0
+synthetic_infra,unknown,1,0,0,0,1,0,0,0,0,1,0,unknown
+synthetic_rejected,unknown,2,0,2,0,0,0,0,0,0,0,0,unknown
+synthetic_success,unknown,2,2,0,0,0,2,2,2,0,0,0,1.0
+synthetic_unfinished,unknown,1,0,0,0,1,1,0,0,0,0,1,unknown
